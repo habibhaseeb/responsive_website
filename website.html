@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <style>
+         html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll; /* Enable vertical scrolling */
+        scroll-snap-type: y mandatory; /* Enable mandatory vertical scrolling snapping */
+        scroll-behavior: smooth;
+        scroll-snap-points-y: repeat(2px);
+        }
+
+        ul li{
+            margin-left: 20px;
+            list-style-type: none;
+            padding: 10px;
+            border-radius: 15px;
+            transition: 0.2s;
+            cursor: pointer;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #3e3e3e;
+        }
+        ul li:hover{
+            background: rgb(239, 233, 232);
+            color: rgb(181, 6, 6);
+        }
+        header{
+            display: flex;
+            text-align: center;
+            margin-left: 14.5rem;
+        }
+        @keyframes header{
+            
+            50%{
+                flex-shrink: calc(40deg);
+
+            }
+        }
+    .btn{
+        display: flex;
+        width: 9.7rem;
+        height: 3rem;
+        padding: 5px;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+        border-radius: 22px;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        margin-left: 14px;
+        margin-top: 14px;
+        background-color: #0099ff;
+        color: #fff;
+        border: none;
+        box-shadow: inset 10px black;
+    }
+.text{
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 12em;
+    height: 8em;
+    padding: 20px;
+    margin: 25px;
+    margin-left: 3.5rem;
+    margin-bottom: -13px;
+    margin-top: 120px;
+    /* border: 1px solid red; */
+   
+}
+button{
+    position: relative;
+    display: flex;
+        width: 11rem;
+        height: 3.5rem;
+        padding: 5px;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+        border-radius: 17px;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        margin-left: 8px;
+        margin-top: 7rem;
+        margin-bottom: 0px;
+        background-color: #0099ff;
+        color: #fff;
+        border: none;
+        box-shadow: inset 10px black;
+}
+button:hover{
+    background-color: #264ff5;
+    transition: 0.4s;
+    box-shadow: 3px 5px 8px rgb(151, 147, 147);
+}
+    .picture img{
+        position: absolute;
+        width: 590px;
+        height: 470px;
+        margin-right: 30px;
+        margin-left: 5.6in;
+        margin-top: -3.8in;
+        border-radius: 10px;
+}
+        
+.container{
+    display: flexbox;
+    position: relative;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23.7px;
+    font-weight: 100;
+    color: #3e3e3e;
+}
+.body-txt{
+    position: relative;
+    margin-top: 2in;
+    margin-left: 3.7in;
+    margin-right: 15px;  
+}
+.body-txt p{
+    font-family: Arial;
+    font-weight: 550;
+    font-size: 28px;
+}
+.user-email{
+    padding: 12.5px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    width: 8cm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(128, 128, 128, 0.764);
+}
+
+.user-email:hover {
+  border-color: #500bff; /* Change the border color on hover */
+  box-shadow: 0 0 5px rgb(43, 0, 255); /* Add a subtle shadow on hover */
+  outline-color: #0157b4;
+  transition: 0.5s;
+}
+.btn-2{
+    position: absolute;
+    margin-left: 5in;
+    margin-top: -1.43cm;
+    margin-left: 10cm;
+    width: 140px;
+}
+.btn-2:hover{
+    background-color: #264ff5;
+    transition: 0.4s;
+    box-shadow: 3px 5px 8px rgb(151, 147, 147);
+}
+.headsection{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.lbl{
+    margin-left: 7.78cm;
+}
+.section{
+    margin-top: 7rem;
+    width: 100%;
+    background-color: #264ff5;
+}
+.paragraph p{
+    display: inline-block;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    margin-left: 49px;
+    margin-top: 36px;
+    height: 3.40cm;
+    word-wrap: break-word;
+    color: #999999;
+}
+.section2{
+    width: 100%;
+}
+.child-1{
+  
+    margin: 35px;
+    padding: 10px;
+    margin-bottom: 0px;
+    width: 540px;
+    height: 525px;
+    background-color: #7d7d7d;
+    border-radius: 32px;
+}
+.child-2{
+    
+    padding: 10px;
+    margin-left: 6.4in;
+    margin-top: -14.4cm;
+    margin-right: 10px;
+    width: 540px;
+    height: 525px;
+    background-color: #0079ae;
+    border-radius: 32px;
+}
+.para{
+    margin: 0%;
+    float: left;
+    margin-left: 25px;
+    font-family: Arial;
+}
+.para-2{
+    margin-top: -71px;
+    float: left;
+    margin-left: 25px;
+    font-family: Arial;
+}
+.child-3{
+    margin-left: 36px;
+    margin-top: 27px;
+    padding: 10px;
+    width: 540px;
+    height: 525px;
+    background-color: #3201eb;
+    border-radius: 32px;
+}
+.child-4{
+    padding: 10px;
+    margin-top: -544px;
+    margin-left: 616px;
+    width: 540px;
+    height: 525px;
+    background-color: #8160ff;
+    border-radius: 32px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .text{ 
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .container, .body-txt{
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: Arial;
+    margin-top: 11px;
+    font-weight: 550;
+    margin-left: 22px;
+    margin-bottom: 246px;
+    font-size: 8px;
+  }
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .user-email{
+    width: 210px;
+    margin-left: 63px;
+    border: 2px solid orange;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .btn-2{
+    margin-top: 15px;
+    margin-left: 21px;
+    width: 312px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #num2{
+    font-size: 21px;  
+    margin-bottom: 38px;
+    margin-left: 20px;
+    color: red;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .body-txt{
+    margin-bottom: 98px
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+    button{
+    width: 80%;
+    height: 3.5rem;
+    padding: 5px;
+    border-radius: 17px;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin-left: 37px;
+    margin-top: 1rem;
+    margin-bottom: -26px;
+    background-color: #3b3a58;
+    color: #fff;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+    .heading{
+      font-size: 37px;
+        margin: 6px;
+        margin-top: 38px;
+        margin-left: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .picture{
+    position: absolute;
+    width: 590px;
+    height: 470px;
+    margin-right: 30px;
+    margin-left: -6.5in;
+    margin-top: 725px;
+    border-radius: 10px;
+    }
+    .btn{
+      width: 17rem;
+    font-size: larger;
+    position: absolute;
+    margin-left: -220px;
+    height: 57px;
+    z-index: 5;
+  }
+  .text{
+    margin-top: 4pc;
+    margin-left: -0.2pc;
+  }
+   }
+   .child-1{
+    width: 351px;
+    margin-left: 22px;
+}
+.paragraph,.new-para {
+    margin-left: 4px;
+    color: chartreuse;
+}
+}
+   
+</style>
+</head>
+<body id="body">
+    <header>
+        <nav>
+            <ul class="ul" style="display: flex; margin-right: 20px; margin-left: 20px;"><li>Teams</li>
+                <li>Showcase</li>
+                <li>Developers</li>
+                <li>Resources</li>
+                <li>Blog</li>
+                <li>Pricing</li></ul>
+            </nav>
+            <button class="btn" style="width: 13rem;">Sign up for<b style="margin-left: 5px;"> FREE </b></button>
+    </header>
+    <div class="container">
+        <div class="text">Email Marketing Done<br/> Right
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Try us for free</button>
+            <div class="picture"><img src="./asset 1.jpeg"></div>
+        </div>
+    </div>
+
+    <div class="body-txt">
+        <p id="num2">Join 300,000+ companies growing their<br/>business with email marketing</p>
+      <input type="email" name="Email" placeholder="Email" class="user-email"/>   
+      <button class="btn-2" style="font-family: Arial;font-weight: 600;">Start Now!</button>
+    </div>
+
+    <div class="section">    
+        <div class="headsection"><h1 class="heading" style="font-size: 56px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Only pay for what you <br/>send</h1></div>
+        <div class="paragraph"><p class="new-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consequatur. Reprehenderit dolor a similique aperiam tenetur optio. Iste, officia laborum sit, illum libero laboriosam repellendus exercitationem praesentium error, ipsa a?</p></div>
+
+        <div class="section-2">
+            <div class="child-1">
+                <h1 style="text-align: center; font-size: 40px; color: white; font-weight: 700; font-family: Arial;">Free</h1>
+                <p style="text-align: center; font-size: 25px; color: white; font-family: Arial;">Lorem ipsum dolor sit amet.</p>
+                <h1 style="text-align: center; font-size: 45px; color: #ffffff; font-weight: 700; font-family: Arial;">10.322/month</h1>
+                <p class="para" style="text-align: center; font-size: 25px; color: white; font-family: Arial;"> ✓ Lorem ipsum dolor sit amet.</p>
+                <p class="para" style="text-align: center; font-size: 25px; color: white; font-family: Arial;"> ✓ Lorem ipsum dolor sit amet.</p>
+                <p class="para" style="text-align: center; font-size: 25px; color: white; font-family: Arial;"> ✓ Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="child-2">
+                <h1 style="text-align: center; font-size: 40px; color: #ffffff; font-weight: 700; font-family: Arial;">Lite</h1>
+                <p style="text-align: center; font-size: 25px; color: white; font-family: Arial;">Lorem ipsum dolor sit amet.</p>  
+                <h1 style="text-align: center; font-size: 45px; color: #ffffff; font-weight: 700; font-family: Arial;">399.5/month</h1>
+                <p class="para-2" style="text-align: center; font-size: 25px; color: white; font-family: Arial;"> ✓ Lorem ipsum dolor sit amet.
+                  <br>  ✓ Lorem ipsum dolor sit amet. <br> ✓ Lorem ipsum dolor sit amet.
+                </p>              
+            </div>
+            <div class="child-3">
+                <h1 style="text-align: center; font-size: 40px; color: #ffffff; font-weight: 700; font-family: Arial;">Premium</h1>
+                <p style="text-align: center; font-size: 25px; color: white; font-family: Arial;">Lorem ipsum dolor sit amet.</p>  
+                <h1 style="text-align: center; font-size: 45px; color: #ffffff; font-weight: 700; font-family: Arial;">399.5/month</h1>
+                <p class="para-3" style="text-align: center; font-size: 25px; color: white; font-family: Arial;"> ✓ Lorem ipsum dolor sit amet.
+                  <br>  ✓ Lorem ipsum dolor sit amet. <br> ✓ Lorem ipsum dolor sit amet.
+                </p>              
+            </div>
+            <div class="child-4">
+                <h1 style="text-align: center; font-size: 40px; color: #ffffff; font-weight: 700; font-family: Arial;">Lite</h1>
+                <p style="text-align: center; font-size: 25px; color: white; font-family: Arial;">Lorem ipsum dolor sit amet.</p>  
+                <h1 style="text-align: center; font-size: 45px; color: #ffffff; font-weight: 700; font-family: Arial;">399.5/month</h1>
+                <p class="para-4" style="text-align: center; font-size: 25px; color: white; font-family: Arial;"> ✓ Lorem ipsum dolor sit amet.
+                  <br>  ✓ Lorem ipsum dolor sit amet. <br> ✓ Lorem ipsum dolor sit amet.
+                </p>              
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
